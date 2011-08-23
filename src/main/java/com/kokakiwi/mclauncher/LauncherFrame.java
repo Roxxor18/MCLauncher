@@ -183,10 +183,14 @@ public class LauncherFrame extends Frame
         }
     }
     
-    public void playOffline()
+   public void playOffline()
     {
+    
         getConfig().set("latestVersion", "-1");
+        getConfig().set("downloadTicket", "35b9fd01865fda9d70b157e244cf801c");
         getConfig().set("userName", loginForm.getUserName());
+        getConfig().set("sessionID", "12345");
+                
         loginForm.loginOk();
         runGame();
     }
